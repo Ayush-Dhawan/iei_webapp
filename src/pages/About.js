@@ -86,7 +86,7 @@ return (
        <HeadContent isAnimating={isAnimating} setIsAnimating={setIsAnimating} showMessage={showMessage} setShowMessage={setShowMessage}>
            {screenWidth < 1072 ? <>
         <div className={`${styles['head-message-block-1']}`}>
-<div className={`${styles['head-img']}`}></div>
+<div className={`${styles['head-img']} ${styles['sujata-mam-img']}`}></div>
             <p className={styles.headName}>Dr. Sujata Alegavi</p>
 </div>
  <div className={`${styles['head-message-block-2']}`}>
