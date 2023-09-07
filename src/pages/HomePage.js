@@ -25,7 +25,7 @@ function Box() {
       </div>
       <div className={styles.slogan}>
         <p className={styles.trackinginexpand}>
-          Promoting excellence in engineering <br /> <span>since 1920...</span>
+          Promoting excellence in engineering <br /> <span>since 2023...</span>
         </p>
       </div>
     </>
