@@ -19,7 +19,7 @@ export default function App() {
   }
   return (
     <div style={containerStyle}>
-      <BrowserRouter>
+      <BrowserRouter basename='/iei_webapp'>
         <Routes>
           <Route path="/" element={<HomePage />} /> 
           <Route path='/about' element = {<About />} />
