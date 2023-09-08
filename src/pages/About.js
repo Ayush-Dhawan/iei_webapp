@@ -14,6 +14,9 @@ const [showMessage, setShowMessage] = useState(false);
 const [isAnimating2, setIsAnimating2] = useState(false);
 const [showMessage2, setShowMessage2] = useState(false);
 
+const [showHOD, setShowHOD] = useState(true)
+const [showDHOD, setShowDHOD] = useState(true)
+
 // const mediaQueryMatches = useMediaQueries({
 //     '(max-width: 1072px)': 'smallScreen', // Define the media query and identifier
 //   });
@@ -37,22 +40,26 @@ const [showMessage2, setShowMessage2] = useState(false);
     };
   }, []);
 
-//   const onAnimationComplete = () => {
-//     if (isAnimating) {
-//       setShowMessage(true);
-//     }
-//   };
+  const onAnimationComplete = () => {
+        if (!isAnimating) {
+            setIsAnimating(false); // Animation ended, set isAnimating to false
+          }
+  };
 
 const onAnimation = () =>{
     setIsAnimating(!isAnimating);
+    setShowHOD(false);
     setTimeout(() => {
         setShowMessage(!showMessage);
+        setShowHOD(true);
     },500);
 }
 const onAnimation2 = () =>{
     setIsAnimating2(!isAnimating2);
+    setShowDHOD(false);
     setTimeout(() => {
         setShowMessage2(!showMessage2);
+        setShowDHOD(true);
     },500);
 }
 
@@ -119,11 +126,13 @@ return (
             transition={{
                 type: 'spring',
                 stiffness: 60,
-            }}
-            //   onAnimationComplete={onAnimationComplete}
+            }
+        }  
+        
+            onAnimationComplete={onAnimationComplete}
             className={`${styles['head-message-block-1']}`}
             >
-            <div className={`${styles['head-img']} ${styles['sujata-mam-img']}`}></div>
+            <div className={`${styles['head-img']} ${!showHOD && styles['head-img-initial']} ${showHOD && styles['sujata-mam-img']}`} onAnimationEnd={()=>setIsAnimating(false)}></div>
             <p className={styles.headName}>Dr. Sujata Alegavi</p>
             </motion.div>
             {showMessage ? (
@@ -146,7 +155,7 @@ return (
             </div>
             ) : (
             <div className={`${styles['initial-head-message']} ${isAnimating ? styles['hidden'] : ''}`}>
-                <h1 style={fontFam}>View H.O.D's Message</h1>
+                <h1 style={fontFam}>H.O.D's Message</h1>
                 <button
                 onClick={onAnimation}
                 className={`${styles['view-content-btn']} ${styles['color-change-2x']}`}
@@ -165,7 +174,7 @@ return (
         <HeadContent isAnimating2={isAnimating2} setIsAnimating={setIsAnimating2} showMessage2={showMessage2} setShowMessage={setShowMessage2}>
         {screenWidth < 1072 ? <>
         <div className={`${styles['head-message-block-1']}`}>
-<div className={`${styles['head-img']} ${styles['sunilSirImg']}`}></div>
+<div className={`${styles['head-img']} ${!showDHOD && styles['head-img-initial']} ${showDHOD && styles['sunilSirimg']}`}></div>
             <p className={styles.headName}>Mr. Sunil Khatri</p>
 </div>
  <div className={`${styles['head-message-block-2']}`}>
@@ -205,7 +214,7 @@ I am excited to witness the remarkable journey ahead and the transformative impa
             //   onAnimationComplete={onAnimationComplete}
             className={`${styles['head-message-block-1']}`}
             >
-            <div className={`${styles['head-img']} ${styles['sunilSirImg']}`}></div>
+            <div className={`${styles['head-img']}  ${!showDHOD && styles['head-img-initial']} ${showDHOD && styles['sunilSirImg']}`}></div>
             <p className={styles.headName}>Mr. Sunil Khatri</p>
             </motion.div>
             {showMessage2 ? (

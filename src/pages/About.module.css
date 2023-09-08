@@ -228,6 +228,17 @@ a{
 
 }
 
+.head-img-initial{
+    height: 15rem;
+    width: 17rem;
+    border: 2px solid black;
+    margin-bottom: 10vh;
+    background: url('../images/image-roll.png');
+    background-position: center;
+    background-size: cover;
+    border: none;
+}
+
 .view-content-btn{
     padding: 10px;
     border-radius: 10px;
