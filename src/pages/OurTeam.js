@@ -29,7 +29,7 @@ export default function OurTeam() {
             <br />
             
            <h1  className={`${styles['color-change-2x-2']} ${styles['teamText']}`}>
-              Team<span className={`${styles['color-change-2x-2-3']}`}>.</span>
+              Team<span className={`${styles['color-change-2x-2-3']}`}></span>
             </h1>
             
           </div>
