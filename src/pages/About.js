@@ -174,7 +174,7 @@ return (
         <HeadContent isAnimating2={isAnimating2} setIsAnimating={setIsAnimating2} showMessage2={showMessage2} setShowMessage={setShowMessage2}>
         {screenWidth < 1072 ? <>
         <div className={`${styles['head-message-block-1']}`}>
-<div className={`${styles['head-img']} ${!showDHOD && styles['head-img-initial']} ${showDHOD && styles['sunilSirimg']}`}></div>
+<div className={`${styles['head-img']} ${!showDHOD && styles['head-img-initial']} ${showDHOD && styles['sunilSirImg']}`}></div>
             <p className={styles.headName}>Mr. Sunil Khatri</p>
 </div>
  <div className={`${styles['head-message-block-2']}`}>
