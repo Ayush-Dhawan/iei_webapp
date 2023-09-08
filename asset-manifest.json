@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/iei_webapp/static/css/main.f6d59e79.css",
-    "main.js": "/iei_webapp/static/js/main.7c2f9e02.js",
+    "main.css": "/iei_webapp/static/css/main.75b60d05.css",
+    "main.js": "/iei_webapp/static/js/main.68dbfe25.js",
     "static/media/phone_animations_lottie_2.gif": "/iei_webapp/static/media/phone_animations_lottie_2.12e011f4a877e8eadb90.gif",
     "static/media/vision4.jpg": "/iei_webapp/static/media/vision4.4459c8d91b5bc8b05a32.jpg",
     "static/media/background.gif": "/iei_webapp/static/media/background.5d850951310c0548bfcf.gif",
@@ -16,13 +16,14 @@
     "static/media/samarth.png": "/iei_webapp/static/media/samarth.1b3baaa089e8947cc4a8.png",
     "static/media/vision2.jpg": "/iei_webapp/static/media/vision2.0c13720b2cd25b8f095a.jpg",
     "static/media/Sunil Khatri.jpg": "/iei_webapp/static/media/Sunil Khatri.f4b2a6928a2cfc722faf.jpg",
+    "static/media/image-roll.png": "/iei_webapp/static/media/image-roll.845d86a8fe289b51f58a.png",
     "static/media/sujatamam.jpg": "/iei_webapp/static/media/sujatamam.e3ff77fca5b6478379d2.jpg",
     "index.html": "/iei_webapp/index.html",
-    "main.f6d59e79.css.map": "/iei_webapp/static/css/main.f6d59e79.css.map",
-    "main.7c2f9e02.js.map": "/iei_webapp/static/js/main.7c2f9e02.js.map"
+    "main.75b60d05.css.map": "/iei_webapp/static/css/main.75b60d05.css.map",
+    "main.68dbfe25.js.map": "/iei_webapp/static/js/main.68dbfe25.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6d59e79.css",
-    "static/js/main.7c2f9e02.js"
+    "static/css/main.75b60d05.css",
+    "static/js/main.68dbfe25.js"
   ]
 }
