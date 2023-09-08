@@ -240,7 +240,7 @@ I am excited to witness the remarkable journey ahead and the transformative impa
             </div>
             ) : (
             <div className={`${styles['initial-head-message']} ${isAnimating2 ? styles['hidden'] : ''}`}>
-                <h1 style={fontFam}>View Deputy H.O.D's Message</h1>
+                <h1 style={fontFam}>Deputy H.O.D's Message</h1>
                 <button
                 onClick={onAnimation2}
                 className={`${styles['view-content-btn']} ${styles['color-change-2x']}`}
