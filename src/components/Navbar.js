@@ -72,8 +72,8 @@ function DropDown(){
               <li><a style={linkStyle} href=""><NavLink style={{color: 'red', textDecorationLine: 'none'}} to="/">Home</NavLink></a></li>
                 <li><a style={linkStyle} href=""><NavLink style={{color: 'red', textDecorationLine: 'none'}} to="/team">Our Team</NavLink></a></li>
                 <li><a style={linkStyle} href=""><NavLink style={{color: 'red', textDecorationLine: 'none'}} to="/about">About Us</NavLink></a></li>
-                {/* <li ><a style={linkStyle} href=""><NavLink style={{color: 'red', textDecorationLine: 'none'}} to="/events">Events</NavLink></a></li>
-                <li><a style={linkStyle} href="">Gallery</a></li> */}
+                 <li ><a style={linkStyle} href=""><NavLink style={{color: 'red', textDecorationLine: 'none'}} to="/events">Events</NavLink></a></li>
+                // <li><a style={linkStyle} href="">Gallery</a></li> 
                 <li><a style={linkStyle} href=""><NavLink style={{color: 'red', textDecorationLine: 'none'}} to="/contact">Contact</NavLink></a></li>
             </ul>
           </div>
